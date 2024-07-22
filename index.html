@@ -622,7 +622,7 @@ function getFormattedDate() {
         var s = "";
         if(sem==1)
         {
-        s += "202301";
+        s += "202401";
         
         switch(t[2])
         {
@@ -646,7 +646,7 @@ function getFormattedDate() {
         }
         else
         {
-            s += "202308";
+            s += "202408";
         
         switch(t[2])
         {
@@ -676,7 +676,7 @@ function getFormattedDate() {
         var s = "";
         if(sem==1)
         {
-        s += "202301";
+        s += "202401";
         switch(t[2])
         {
             case "SU":  s += "01";
@@ -700,7 +700,7 @@ function getFormattedDate() {
 
         else
         {
-            s += "202308";
+            s += "202408";
         
         switch(t[2])
         {
@@ -739,10 +739,10 @@ function getFormattedDate() {
 
 // Set the RRULE based on the semester
         if (sem === 1) {
-     calText += "\nRRULE:FREQ=WEEKLY;BYDAY=" + t[2] + ";UNTIL=20230430;BYSETPOS=1;BYHOUR=" + t[0] + ";BYMINUTE=0";
+     calText += "\nRRULE:FREQ=WEEKLY;BYDAY=" + t[2] + ";UNTIL=20240430;BYSETPOS=1;BYHOUR=" + t[0] + ";BYMINUTE=0";
         }
         else if (sem === 2) {
-    calText += "\nRRULE:FREQ=WEEKLY;BYDAY=" + t[2] + ";UNTIL=20231231;BYSETPOS=1;BYHOUR=" + t[0] + ";BYMINUTE=0";
+    calText += "\nRRULE:FREQ=WEEKLY;BYDAY=" + t[2] + ";UNTIL=20241231;BYSETPOS=1;BYHOUR=" + t[0] + ";BYMINUTE=0";
     }
 
 calText += "\nEND:VEVENT";
